@@ -15,6 +15,7 @@
 		153B56241C934F70005F0B90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153B56221C934F70005F0B90 /* LaunchScreen.storyboard */; };
 		153B562F1C934F70005F0B90 /* DemoGoogleMapsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 153B562E1C934F70005F0B90 /* DemoGoogleMapsTests.m */; };
 		153B563A1C934F70005F0B90 /* DemoGoogleMapsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 153B56391C934F70005F0B90 /* DemoGoogleMapsUITests.m */; };
+		153B56481C935009005F0B90 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153B56471C935009005F0B90 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		153B56351C934F70005F0B90 /* DemoGoogleMapsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoGoogleMapsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		153B56391C934F70005F0B90 /* DemoGoogleMapsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoGoogleMapsUITests.m; sourceTree = "<group>"; };
 		153B563B1C934F70005F0B90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		153B56471C935009005F0B90 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				153B56481C935009005F0B90 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		153B56081C934F70005F0B90 = {
 			isa = PBXGroup;
 			children = (
+				153B56471C935009005F0B90 /* MapKit.framework */,
 				153B56131C934F70005F0B90 /* DemoGoogleMaps */,
 				153B562D1C934F70005F0B90 /* DemoGoogleMapsTests */,
 				153B56381C934F70005F0B90 /* DemoGoogleMapsUITests */,
@@ -207,6 +211,11 @@
 				TargetAttributes = {
 					153B56101C934F70005F0B90 = {
 						CreatedOnToolsVersion = 7.2.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					153B56291C934F70005F0B90 = {
 						CreatedOnToolsVersion = 7.2.1;
